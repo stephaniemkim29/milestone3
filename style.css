@@ -1,0 +1,31 @@
+body{
+	background-color: #FAF0E6; /* Linen */
+}
+.title-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #FFE4E1; /* MistyRose */
+	padding: 10px;
+
+}
+
+.title-header h1{
+	font-size: 48px;
+}
+
+.title-header a{
+	display: inline-flex;
+	flex-direction: row;
+	width: 48px;
+	height: 24px;
+	align-items: center;  
+    justify-content: center;
+    padding: 20px; 
+    white-space: nowrap;
+}
+
+.main-container{
+	background-color: #FDF5E6; /* MistyLace */
+	padding: 20px;
+}
