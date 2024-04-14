@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitted</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="search-title-header">
+            <h1>Fitted</h1>
+        </div>
+    </header>
+    <div class="search-container">
+        <div class= "welcome-header">
+            <h2> Hi <?php echo $_POST["name"]; ?> !</h2>
+            <h3>Search An Outfit</h3>
+        </div>
+        <h3>Lookup</h3>
+        <div class= "search-content">
+            <form action="results.php" method="post">
+                <div class="outfit-search-form">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" required><br><br>
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color" required><br><br>
+                    <label for="season">Season:</label>
+                    <input type="text" id="season" name="season" required><br><br>
+                    <label for="size">Size:</label>
+                    <input type="text" id="size" name="size" required><br><br>
+                </div>
+                <button type="submit" name="search-button">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+

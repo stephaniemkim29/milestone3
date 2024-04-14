@@ -1,0 +1,256 @@
+body {
+    background-color: #FAF0E6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    font-family: Georgia;
+
+}
+
+header {
+    background-color: #FFE4E1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: Georgia;
+
+
+}
+.search-title-header{
+    text-align: center;
+}
+.search-title-header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title-header a {
+    color: #BC8F8F;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+.title-header a:hover {
+    background-color: #BC8F8F;
+    color: white;
+    border-radius: 4px;
+
+}
+
+.title-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+
+.signup-container, .login-container {
+    border-radius: 10px;
+    background-color: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 20px;
+ 
+}
+
+.signup-container h2, .login-container h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Form styling */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+}
+
+button[type="submit"][name="login-sign-button"] {
+    width: 40%;
+    padding: 10px;
+    background-color: #BC8F8F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    display: block; 
+    margin: 0 auto; 
+    font-family: Georgia;
+}
+
+button[type="submit"][name="login-sign-button"]:hover {
+    background-color: #FFE4E1;
+    color: #BC8F8F;
+}
+
+
+.search-container {
+    border-radius: 10px;
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.outfit-search-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-gap: 20px; /* Space between grid items */
+    width: 100%;
+    max-width: 600px; /* Adjusts the maximum width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+.outfit-search-form label, .outfit-search-form input {
+    display: block; /* Ensures labels and inputs are block elements */
+    width: 100%; /* Full width to utilize the space in grid */
+}
+
+.outfit-search-form input {
+    padding: 10px; /* Adjust padding for better touch area */
+    margin-bottom: 0; /* Remove margin-bottom as it's handled by grid-gap */
+    border: 1px solid #ccc; /* Lighter border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Includes padding and border in width */
+}
+
+button[type="submit"][name="search-button"] {
+    padding: 12px 24px; /* Adjusted padding for better proportions */
+    background-color: #BC8F8F; /* Consistent background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Georgia', serif; /* Ensures font family falls back to serif if Georgia is unavailable */
+    cursor: pointer; /* Indicates the button is clickable */
+    width: 100%; /* Full width button */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button[type="submit"][name="search-button"]:hover {
+    background-color: #FFE4E1; /* Lighter color on hover */
+    color: #BC8F8F; /* Darker text color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .outfit-search-form {
+        grid-template-columns: 1fr; /* Stack form fields vertically on smaller screens */
+    }
+}
+
+
+/* Search Page */
+
+.search-container{
+    border-radius: 10px;
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+    padding: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Form styling */
+.search-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    /*
+    margin-top: 10px;
+    display: grid;*/
+}
+
+.outfit-search-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-gap: 20px; /* Space between grid items */
+    width: 100%;
+    max-width: 600px; /* Adjusts the maximum width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+.outfit-search-form label, 
+.outfit-search-form input {
+    display: block; /* Makes elements block to fill their grid cell */
+    width: 100%; /* Full width to utilize the space in grid */
+}
+.outfit-search-form input {
+    padding: 8px; /* Padding for input */
+    margin-bottom: 0; /* Remove margin-bottom as it's handled by grid-gap */
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+/*.search-content label {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.search-content input[type="text"]{
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+}*/
+
+button[type="submit"][name="search-button"] {
+    padding: 1% 4%;    
+    background-color: #BC8F8F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0; 
+    font-family: Georgia;
+}
+
+button[type="submit"][name="search-button"]:hover {
+    background-color: #FFE4E1;
+    color: #BC8F8F;
+}
+
+
