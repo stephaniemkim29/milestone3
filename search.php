@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <div class="title-header">
-            <a href="signup.html">Sign Up</a>
+        <div class="search-title-header">
             <h1>Fitted</h1>
-            <a href="login.html">Login</a>
         </div>
     </header>
+    <div class="search-container">
+        <h2> Welcome back <?php echo $_POST["name"]; ?> </h2>
+        <h2 class >Search Your Outfit</h2>
 
-    <div class="main-container">
-        <h3>hello</h3>
 
 </body>
+
